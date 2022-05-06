@@ -1,0 +1,21 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day7: task1</title>
+  </head>
+  <body>
+    <button onclick="twoArg('1',2,false)">click me for error</button>
+    <button onclick="twoArg('1',2)">click me no error</button>
+    <script>
+      function twoArg() {
+        if (arguments.length === 2) {
+          document.write(arguments[0], "and", arguments[1]);
+        } else {
+          throw new Error(document.write("error only 2 args"));
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+body {
+  text-align: center;
+  background-color: aliceblue;
+}
+
+#mainHeading {
+  margin-top: 50px;
+  color: blue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2em;
+}
+
+hr {
+  width: 90%;
+}
+form {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  text-align: center;
+  width: 400px;
+  border: 1px solid darkgrey;
+  border-radius: 10px;
+  /* box-shadow: 5px 5px 5px #888888; */
+  padding: auto;
+  box-shadow: 1px 1px 20px 0px rgba(59, 57, 57, 0.75);
+}
+
+.nameInput {
+  width: 40%;
+  margin: auto;
+  height: 30px;
+  border: 1px solid darkgrey;
+  border-radius: 5px;
+}
+
+.emailInput,
+.pass {
+  width: 81%;
+  margin: auto;
+  margin-top: 5px;
+  height: 30px;
+  border: 1px solid darkgrey;
+  border-radius: 5px;
+}
+
+.label {
+  display: block;
+  text-align: left;
+  font-size: 13px;
+  margin-left: 10%;
+  margin-top: 5px;
+  color: grey;
+}
+
+.date {
+  width: 26%;
+  margin: auto;
+  margin-top: 5px;
+  height: 30px;
+  border: 1px solid darkgrey;
+  border-radius: 5px;
+}
+
+#policy {
+  display: block;
+  text-align: left;
+  font-size: 10px;
+  margin-left: 10%;
+  margin-top: 5px;
+  color: grey;
+}
+
+button {
+  color: white;
+  margin: 5px;
+  font-weight: bold;
+  font-size: 1.3em;
+  background-color: #2ead1d;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+}

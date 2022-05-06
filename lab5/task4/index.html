@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day5: task4</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      * {
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      #container {
+        border: 1px solid red;
+        border-radius: 15px;
+        width: 400px;
+        height: 200px;
+        margin: 15px auto;
+      }
+      .btn {
+        border-radius: 15px;
+        border: 1px solid black;
+        width: 100px;
+        height: 50px;
+        background-color: bisque;
+      }
+
+      #left {
+        position: absolute;
+        bottom: 50%;
+        left: 15px;
+      }
+
+      #top {
+        position: absolute;
+        bottom: 50%;
+        left: 45%;
+        top: 15px;
+      }
+
+      #right {
+        position: absolute;
+        bottom: 50%;
+        right: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img src="./movingPic/icon2.gif" alt="2" id="left" />
+      <img src="./movingPic/icon1.gif" alt="1" id="right" />
+
+      <img src="./movingPic/TOP.JPG" alt="3" id="top" />
+    </div>
+
+    <button class="btn" id="startBtn" onclick="startFun()">start</button>
+    <button class="btn" id="stopBtn" onclick="stopFun()">stop</button>
+    <button class="btn" id="reloadBtn" onclick="reload()">reload</button>
+    <script src="./index.js"></script>
+  </body>
+</html>

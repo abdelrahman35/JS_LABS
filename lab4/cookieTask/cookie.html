@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cookie task</title>
+    <style>
+      form {
+        margin-top: 100px;
+        border: 2px solid black;
+        padding: 15px;
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 15px;
+      }
+      input {
+        display: block;
+      }
+      label {
+        text-align: left;
+        margin-bottom: auto;
+        padding-bottom: 5px;
+      }
+      img {
+        display: inline;
+      }
+      #rad1,
+      #rad2 {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="name"> Enter your name</label>
+    <input type="text" id="name1" />
+    <br />
+    <label for="age"> Enter your age</label>
+    <input type="text" id="age" />
+    <br />
+    <label for="gender"> select your gender:</label>
+    <br />
+    <br />
+    <br />
+    <input type="radio" name="gender" value="male" id="rad1" />
+    <img src="1.jpg" />
+    <input type="radio" name="gender" value="female" id="rad2" />
+    <img src="2.jpg" />
+    <br />
+    <br />
+    <label for="color"> select your fav color:</label>
+
+    <select name="color" id="color">
+      <option value="red">red</option>
+      <option value="blue">blue</option>
+      <option value="green">green</option>
+    </select>
+    <br />
+    <br />
+    <a href="./result.html"> <input type="button" value="save" id="btn" /> </a>
+    <script src="./cookie.js"></script>
+  </body>
+</html>

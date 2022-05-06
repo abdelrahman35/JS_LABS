@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day5: task3</title>
+    <style>
+      .row {
+        display: flex;
+      }
+
+      .column {
+        flex: 33.33%;
+        padding: 5px;
+      }
+      body {
+        text-align: center;
+        background-color: bisque;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="row">
+      <div id="column">
+        <img src="./CardMaker/gws.jpg" alt="1" id="1" />
+
+        <img src="./CardMaker/gws2.jpg" alt="2" id="2" />
+
+        <img src="./CardMaker/gws3.jpg" alt="3" id="3" />
+      </div>
+      <div>
+        <input type="radio" name="r" value="1" style="margin-right: 300px" />
+        <input type="radio" name="r" value="2" style="margin-right: 300px" />
+        <input type="radio" name="r" value="3" />
+      </div>
+      <div id="column">
+        <img src="./CardMaker/gwsf.jpg" alt="4" id="4" />
+
+        <img src="./CardMaker/gwsf2.jpg" alt="5" id="5" />
+        <img src="./CardMaker/gwsf3.jpg" alt="6" id="6" />
+      </div>
+      <div>
+        <input type="radio" name="r" value="4" style="margin-right: 300px" />
+        <input type="radio" name="r" value="5" style="margin-right: 300px" />
+        <input type="radio" name="r" value="6" />
+      </div>
+      <input type="text" name="msg" id="msg" placeholder="type your message" />
+      <br />
+      <br />
+      <button id="Btn">submit</button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

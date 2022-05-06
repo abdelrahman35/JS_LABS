@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cookite task page 2</title>
+  </head>
+  <body>
+    <div id="resultDiv"></div>
+    <div id="gender"></div>
+    <script>
+      var result = document.cookie.split(";");
+      var myArray = [];
+      for (var i = 0; i < result.length; i++) {
+        myArray.push(result[i].trim());
+      }
+      var lastArray = [];
+      for (var i = 0; i < myArray.length; i++) {
+        lastArray[myArray[i].split("=")[0]] = myArray[i].split("=")[1];
+      }
+      var reslutDiv = document.getElementById("resultDiv");
+      var genderDiv = document.getElementById("gender");
+      reslutDiv.innerHTML = `
+      <h1> username: <em>${lastArray["username"]}</em> </h1>
+      <h1> userage: <em>${lastArray["userage"]}</em> </h1>
+      <h1> fav color: <span style='color: ${lastArray["usercolor"]}'>${lastArray["usercolor"]}</span> </h1>`;
+      if (lastArray["usergender"] == "male") {
+        genderDiv.innerHTML = `<img src="1.jpg" />`;
+      } else if (lastArray["usergender"] == "female") {
+        genderDiv.innerHTML = ` <img src="2.jpg" />`;
+      }
+    </script>
+  </body>
+</html>

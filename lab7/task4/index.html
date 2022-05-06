@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day7: task4</title>
+  </head>
+  <body>
+    <script>
+      var Rect = new Object();
+      Rect.width = 40;
+      Rect.height = 20;
+      Rect.area = function () {
+        return this.width * this.height;
+      };
+      Rect.perimeter = function () {
+        return (this.width + this.height) * 2;
+      };
+      Rect.DisplayInfo = function () {
+        document.write(
+          `width = ${this.width} m<br>height = ${
+            this.height
+          } m<br>area = ${this.area()} m<sup>2</sup><br>preimeter = ${this.perimeter()} m`
+        );
+      };
+
+      Rect.DisplayInfo();
+    </script>
+  </body>
+</html>

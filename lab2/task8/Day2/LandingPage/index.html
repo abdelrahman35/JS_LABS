@@ -1,0 +1,85 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 id="mainHeading">Facebook</h1>
+    <form action="../../index.html">
+      <h2>Create New Account</h2>
+      <small>It's quick and easy</small>
+      <hr />
+      <input
+        class="nameInput"
+        name="fname"
+        type="text"
+        placeholder="First Name"
+      />
+      <input
+        class="nameInput"
+        name="lname"
+        type="text"
+        placeholder="Last Name"
+      />
+      <input
+        class="emailInput"
+        type="text"
+        placeholder="Mobile Number or Email Address"
+      />
+      <input class="pass" type="password" placeholder="New Password" />
+      <label class="label">Date of Birth:</label>
+      <input
+        class="date"
+        name="bday"
+        type="Number"
+        max="31"
+        placeholder="Day"
+      />
+      <select class="date" name="bmon" placeholder="Month">
+        <optgroup>
+          <option>January</option>
+          <option>February</option>
+          <option>March</option>
+          <option>April</option>
+          <option>May</option>
+          <option>June</option>
+          <option>July</option>
+          <option>August</option>
+          <option>September</option>
+          <option>October</option>
+          <option>Novamber</option>
+          <option>December</option>
+        </optgroup>
+      </select>
+      <input
+        class="date"
+        type="Number"
+        name="byear"
+        max="2010"
+        min="1950"
+        placeholder="Year"
+      />
+      <br />
+      <label class="label">Gender:</label>
+      <div>
+        <input type="radio" value="Female" name="gender" id="Female" />
+
+        <label id="Female" for="Female">Female</label>
+        <input type="radio" name="gender" value="Male" id="Male" />
+        <label id="Male" for="Male">Male</label>
+        <input type="radio" name="gender" value="Custom" id="Custom" />
+
+        <label id="Custom" for="Custom">Custom</label>
+      </div>
+      <small id="policy"
+        >By clicking Sign Up, you agree to our Terms, Data Policy and Cookie
+        Policy. You may receive SMS notifications from us and can opt out at any
+        time.</small
+      >
+      <button type="submit">Sign Up</button>
+    </form>
+  </body>
+</html>
